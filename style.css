@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11b796; 
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.intro-container {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.logo {
+    width: 250px; 
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(47, 8, 73);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}

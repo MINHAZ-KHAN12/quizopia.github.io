@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to QUIZOPIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-container">
+        <img src="img/logo.jpg" alt="Logo" class="logo"> 
+        <h1>WELCOME TO QUIZOPIA</h1>
+        <button id="get-started">Get Started</button>
+    </div>
+
+    <script >document.getElementById('get-started').addEventListener('click', function() {
+        // Fade out the intro page
+        const introContainer = document.querySelector('.intro-container');
+        introContainer.style.opacity = 0;
+    
+        // After the fade-out transition, redirect to the main page
+        setTimeout(function() {
+            window.location.href = 'login.html'; // Change to your main page URL
+        }, 1000); // Match this time with the CSS transition duration
+    });</script>
+</body>
+</html>
